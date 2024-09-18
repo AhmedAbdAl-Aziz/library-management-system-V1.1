@@ -12,10 +12,11 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" style="color: #000000;">
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+
                 @can('manage_users')
                     <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                         <x-nav-link :href="route('create-branch.index')" :active="request()->routeIs('create-branch.index')">
@@ -31,7 +32,7 @@
                     </div>
                 @endcan
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('books.index')" :active="request()->routeIs('books.index')">
+                    <x-nav-link :href="route('books.index')" :active="request()->routeIs('books.index')" style="color: #000000;">
                         {{ __('Books') }}
                     </x-nav-link>
                 </div>
@@ -43,17 +44,17 @@
                     </div>
                 @endcan
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('book-issue.index')" :active="request()->routeIs('book-issue.index')">
+                    <x-nav-link :href="route('book-issue.index')" :active="request()->routeIs('book-issue.index')" style="color: #000000;">
                         {{ __('Books Issue') }}
                     </x-nav-link>
                 </div>
-                {{-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('book-return.index')" :active="request()->routeIs('book-return.index')">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('book-return.index')" :active="request()->routeIs('book-return.index')" style="color: #000000;">
                         {{ __('Books Return') }}
                     </x-nav-link>
-                </div> --}}
+                </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('penalties.index')" :active="request()->routeIs('penalties.index')">
+                    <x-nav-link :href="route('penalties.index')" :active="request()->routeIs('penalties.index')" style="color: #000000;">
                         {{ __('Panalties') }}
                     </x-nav-link>
                 </div>
